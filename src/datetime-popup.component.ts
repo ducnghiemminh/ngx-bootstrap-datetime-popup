@@ -12,6 +12,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
                                 [datepickerMode]="datepickerMode"
                                 [minDate]="minDate"
                                 [maxDate]="maxDate"
+                                [locale]="locale"
                                 [dateDisabled]="dateDisabled"></datepicker>
                     <timepicker *ngIf="showTime" [(ngModel)]="value" (ngModelChange)="onPickerChange()"></timepicker>
                 </li>
@@ -66,6 +67,8 @@ export class DatetimePopupComponent {
 
     @Input()
     dateDisabled: any[] = [];
+
+    locale: string = 'vi';
 
     offClick() {
         this.showPopup = false;
