@@ -14,6 +14,7 @@ import {DatetimePopupButtonOptions, IDatetimePopupButtonOptions} from './button-
                                 [datepickerMode]="datepickerMode"
                                 [minDate]="minDate"
                                 [maxDate]="maxDate"
+                                [locale]="vi"
                                 [dateDisabled]="dateDisabled"></datepicker>
                     <timepicker *ngIf="showTime" 
                                 [(ngModel)]="localValue" 
