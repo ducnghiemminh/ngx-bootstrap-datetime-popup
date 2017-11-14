@@ -14,7 +14,7 @@ import {DatetimePopupButtonOptions, IDatetimePopupButtonOptions} from './button-
                                 [datepickerMode]="datepickerMode"
                                 [minDate]="minDate"
                                 [maxDate]="maxDate"
-                                [locale]="vi"
+                                [locale]="locale"
                                 [dateDisabled]="dateDisabled"></datepicker>
                     <timepicker *ngIf="showTime" 
                                 [(ngModel)]="localValue" 
@@ -88,6 +88,7 @@ export class DatetimePopupComponent implements OnChanges {
     closeButton: IDatetimePopupButtonOptions;
 
     localValue: Date = new Date();
+    locale: string = 'vi';
 
     ngOnChanges(changes: any) {
         if (!this.nowButton) {
