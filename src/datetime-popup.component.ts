@@ -68,7 +68,7 @@ export class DatetimePopupComponent {
     @Input()
     dateDisabled: any[] = [];
 
-    locale: string = 'vi';
+    locale: string = 'fr';
 
     offClick() {
         this.showPopup = false;
